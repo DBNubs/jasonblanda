@@ -8,14 +8,31 @@ import { ApiService } from '../../services/api.service';
 })
 export class PortfolioComponent implements OnInit {
   portfolio: any;
+  portfolioFeatured: any;
+
+  hasImage: boolean;
+  hasLink: boolean;
 
   constructor(private apiService: ApiService) {
     this.apiService.getPortfolio().subscribe((data) => {
       this.portfolio = data;
-    })
+    });
+    
+    this.apiService.getPortfolioFeatured().subscribe((data) => {
+      this.portfolioFeatured = data;
+    });
    }
+   
 
   ngOnInit(): void {
+  }
+
+  hasAnImage() {
+    if(this.portfolio.image != null) {
+      this.hasImage = true;
+    } else {
+      this.hasImage = false;
+    }
   }
 
 }

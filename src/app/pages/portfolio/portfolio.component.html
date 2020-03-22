@@ -11,11 +11,24 @@
     </div>
 </div>
 
-<div class="content">
-    <div *ngFor="let port of portfolio" class="portfolio-item">
-        <a href="{{port.field_url}}" target="_blank">
-            <img src={{port.image}} alt={{port.title}}>
-            <h4>{{port.title}}</h4>
-        </a>
+<div class="main">
+    <h2>Featured Clients</h2>
+    <div class="content featured">
+        <div *ngFor="let port of portfolioFeatured" class="portfolio-featured-item">
+            <a href="{{port.field_url}}" target="_blank">
+                <img src={{port.image}} alt={{port.title}}>
+                <h4>{{port.title}}</h4>
+            </a>
+        </div>
+    </div>
+
+    <div class="content">
+        <ngx-masonry [options]="{ transitionDuration: '0.8s' }">
+            <div ngxMasonryItem class="masonry-item" *ngFor="let port of portfolio" class="portfolio-item">
+                <img src={{port.image}} alt={{port.title}}>
+                <h4>{{port.title}}</h4>
+                <a href="{{port.field_url}}" target="_blank">Visit Website</a>
+            </div>
+        </ngx-masonry>
     </div>
 </div>
