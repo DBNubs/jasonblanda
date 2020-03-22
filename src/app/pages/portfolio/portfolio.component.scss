@@ -70,13 +70,14 @@ h2 {
     }
 
     .portfolio-item {
-        width: 29%;
+        width: 21%;
         text-align: center;
         padding: 25px;
         margin: 10px;
         background: #F8F8F8; 
-        // min-height: 250px;
+        box-shadow: 2px 2px 7px -5px;
         position: relative;
+        min-height: 250px;
 
         img {
             max-width: 90%;
@@ -87,6 +88,7 @@ h2 {
             font-weight: bold;
             font-size: 22px;
             color: #424C55;
+            font-weight: bold;
         }
 
         a {
@@ -95,15 +97,46 @@ h2 {
             bottom: 0;
             left: 0;
             width: 100%;
-            background: #f2dd9a;
             color: #424C55;
             padding: 10px 0;
             transition: all .3s;
+            font-size: 20px;
+            font-weight: bold;
 
             &:hover {
                 background: #354473;
                 color: #fff;
             }
         }
+    }
+}
+
+.portfolio-item:nth-child(1n + 4),
+.portfolio-item:nth-child(2) {
+    a {
+        background: #f2dd9a;
+    }
+}
+
+.portfolio-item:nth-child(2n + 4),
+.portfolio-item:nth-child(3) {
+    a {
+        background: #E77465;
+        color: #fff !important;
+    }
+}
+
+.portfolio-item:nth-child(3n + 4),
+.portfolio-item:nth-child(1) {
+    a {
+        background: #6441A4;
+        color: #fff !important;
+    }
+}
+
+.portfolio-item:nth-child(4n + 4) {
+    a {
+        background: #E99369;
+        color: #fff !important;
     }
 }
