@@ -1,0 +1,21 @@
+<div class="page-header">
+    <div class="info">
+        <h1 class="page-title">Portfolio</h1>
+        <p class="author-info">I've had the privelage of working with 150 amazing clients!</p>
+    </div>
+    
+    <div class="footer">
+        <div id="right-bottom-brace"></div>
+    
+        <div id="left-bottom-brace"></div>
+    </div>
+</div>
+
+<div class="content">
+    <div *ngFor="let port of portfolio" class="portfolio-item">
+        <a href="{{port.field_url}}" target="_blank">
+            <img src={{port.image}} alt={{port.title}}>
+            <h4>{{port.title}}</h4>
+        </a>
+    </div>
+</div>

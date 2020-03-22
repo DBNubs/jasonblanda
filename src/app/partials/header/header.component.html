@@ -1,6 +1,6 @@
 <header>
     <div id="left-top-brace"></div>
-    <div id="logo"><a routerLink="">Jason Blanda</a></div>
+    <div id="logo"><a routerLink="" (click)="closeMenu($event)">Jason Blanda</a></div>
     <button class="hamburger hamburger--spring" [ngClass]="isActive ? 'is-active':'' " type="button" (click)="toggleMenu($event)">
         <span class="hamburger-box">
           <span class="hamburger-inner"></span>
@@ -9,11 +9,11 @@
     <div id="navigation" [ngClass]="isActive ? 'is-active':'' ">
         <nav>
             <ul>
-                <li><a routerLink="" (click)="toggleMenu($event)">Web Development</a></li>
-                <li><a routerLink="" (click)="toggleMenu($event)">Twitch</a></li>
-                <li><a routerLink="" (click)="toggleMenu($event)">Brazillian Jiu-Jitsu</a></li>
-                <li><a routerLink="" (click)="toggleMenu($event)">Portfolio</a></li>
-                <li><a routerLink="" (click)="toggleMenu($event)">Contact Me</a></li>
+                <li><a routerLink="/web-development" (click)="toggleMenu($event)">Web Development</a></li>
+                <li><a routerLink="/portfolio" (click)="toggleMenu($event)">Portfolio</a></li>
+                <li><a routerLink="/twitch" (click)="toggleMenu($event)">Twitch</a></li>
+                <li><a routerLink="/bjj" (click)="toggleMenu($event)">Brazillian Jiu-Jitsu</a></li>
+                <li><a routerLink="/contact" (click)="toggleMenu($event)">Contact Me</a></li>
             </ul>
         </nav>
     </div>

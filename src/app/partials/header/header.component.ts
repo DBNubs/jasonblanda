@@ -16,4 +16,8 @@ export class HeaderComponent implements OnInit {
   toggleMenu(event) {
     this.isActive = !this.isActive;
   }
+
+  closeMenu(event) {
+    this.isActive = false;
+  }
 }

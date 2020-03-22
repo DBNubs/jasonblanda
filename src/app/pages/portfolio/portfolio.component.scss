@@ -1,0 +1,61 @@
+.page-header {
+    background: radial-gradient(50% 50% at 50% 50%, rgba(242, 221, 154, 0.68) 0%, #f2dd9a 100%);
+
+    .info {
+        text-align: center;
+        position: relative;
+        top: 40px;
+
+        .page-title {
+            color: #424C55;
+        }
+
+        .author-info {
+            color: #424C55;
+        }
+    }
+
+    #right-bottom-brace,
+    #left-bottom-brace {
+        background: #424C55;
+
+        &::after {
+            background: #424C55;
+        }
+    }
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+
+    .portfolio-item {
+        width: 22%;
+        text-align: center;
+        padding: 25px;
+
+        a {
+            text-decoration: none;
+
+            img {
+                max-width: 90%;
+            }
+
+            h4 {
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 22px;
+                color: #424C55;
+            }
+
+            &:hover {
+                h4 {
+                    color: #E77465;
+                }
+            }
+        }
+    }
+}

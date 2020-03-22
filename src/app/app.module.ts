@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -11,6 +13,11 @@ import { HomepageHeroComponent } from './partials/homepage-hero/homepage-hero.co
 import { HomepageWebdevHeroComponent } from './partials/homepage-webdev-hero/homepage-webdev-hero.component';
 import { HomepageTwitchHeroComponent } from './partials/homepage-twitch-hero/homepage-twitch-hero.component';
 import { HomepageBjjHeroComponent } from './partials/homepage-bjj-hero/homepage-bjj-hero.component';
+import { WebdevComponent } from './pages/webdev/webdev.component';
+import { TwitchComponent } from './pages/twitch/twitch.component';
+import { BjjComponent } from './pages/bjj/bjj.component';
+import { PortfolioComponent } from './pages/portfolio/portfolio.component';
+import { ContactComponent } from './pages/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -21,11 +28,18 @@ import { HomepageBjjHeroComponent } from './partials/homepage-bjj-hero/homepage-
     HomepageHeroComponent,
     HomepageWebdevHeroComponent,
     HomepageTwitchHeroComponent,
-    HomepageBjjHeroComponent
+    HomepageBjjHeroComponent,
+    WebdevComponent,
+    TwitchComponent,
+    BjjComponent,
+    PortfolioComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    HttpClientModule,
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
