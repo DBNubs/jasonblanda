@@ -8,18 +8,46 @@
     height: 100vh;
     background: radial-gradient(50% 50% at 50% 50%, rgba(231, 116, 101, 0.68) 0%, rgba(231, 116, 101, 0.8) 100%);
 
-    h2 {
-        font-weight: bold;
-        font-size: 52px;
-        line-height: 63px;
-        color: #424C55;
-    }
-
-    .body {
-        width: 75%;
-        font-size: 22px;
-        line-height: 44px;
+    a {
         text-align: center;
-        color: #424C55;
+        display: block;
+        width: 100%;
+        text-decoration: none;
+        
+        h2 {
+            font-weight: bold;
+            font-size: 52px;
+            line-height: 63px;
+            color: #424C55;
+            transition: all .3s;
+        }
+
+        .body {
+            width: 75%;
+            font-size: 22px;
+            line-height: 44px;
+            text-align: center;
+            color: #424C55;
+            transition: all .3s;
+            margin: 0 auto;
+        }
+
+        &:hover {
+            h2 {
+                font-weight: bold;
+                font-size: 52px;
+                line-height: 63px;
+                color: #CFDBDC;
+            }
+    
+            .body {
+                width: 75%;
+                font-size: 22px;
+                line-height: 44px;
+                text-align: center;
+                color: #CFDBDC;
+                margin: 0 auto;
+            }
+        }
     }
 }

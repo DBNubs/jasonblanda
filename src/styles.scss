@@ -40,6 +40,7 @@ h1, h2, h3, h4, h5, h6 {
             height: 75px;
             position: relative;
             width: 5px;
+            transition: all .3s;
     
             &::after {
                 content: "";
@@ -67,4 +68,99 @@ h1, h2, h3, h4, h5, h6 {
             }
         }
     }
+}
+
+.white header {
+    #right-top-brace,
+    #left-top-brace {
+        background: #fff !important;
+
+        &::after {
+            background: #fff !important;
+        }
+    }
+
+    #logo {
+        a {
+            color: #fff !important;
+
+            &:hover {
+                color: #CFDBDC !important;
+            }
+        }
+    }
+
+    .hamburger-inner,
+    .hamburger-inner::before,
+    .hamburger-inner::after {
+        background-color: #fff !important;
+    }
+}
+
+.white .footer {
+    #left-bottom-brace,
+    #right-bottom-brace {
+        background: #fff !important;
+
+        &::after {
+            background: #fff !important;
+        }
+    }
+}
+
+.bjj,
+.twitch {
+    #right-top-brace,
+    #left-top-brace {
+        background: #fff !important;
+
+        &::after {
+            background: #fff !important;
+        }
+    }
+
+    #logo {
+        a {
+            color: #fff !important;
+
+            &:hover {
+                color: #CFDBDC !important;
+            }
+        }
+    }
+
+    .hamburger-inner,
+    .hamburger-inner::before,
+    .hamburger-inner::after {
+        background-color: #fff !important;
+    }
+}
+
+@media (min-height: 200%) {
+.front {
+    #right-top-brace,
+    #left-top-brace {
+        background: #fff !important;
+
+        &::after {
+            background: #fff !important;
+        }
+    }
+
+    #logo {
+        a {
+            color: #fff !important;
+
+            &:hover {
+                color: #CFDBDC !important;
+            }
+        }
+    }
+
+    .hamburger-inner,
+    .hamburger-inner::before,
+    .hamburger-inner::after {
+        background-color: #fff !important;
+    }
+}
 }

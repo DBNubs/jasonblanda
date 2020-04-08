@@ -10,6 +10,11 @@ export class TwitchComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    document.getElementById('body').classList.add('twitch');
+  }
+
+  ngOnDestroy(): void {
+    document.getElementById('body').classList.remove('twitch');
   }
 
 }

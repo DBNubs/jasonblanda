@@ -70,73 +70,41 @@ h2 {
     }
 
     .portfolio-item {
-        width: 21%;
-        text-align: center;
-        padding: 25px;
-        margin: 10px;
-        background: #F8F8F8; 
-        box-shadow: 2px 2px 7px -5px;
+        width: 25%;
+        text-align: center; 
         position: relative;
-        min-height: 250px;
-
-        img {
-            max-width: 90%;
-        }
-
-        h4 {
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 22px;
-            color: #424C55;
-            font-weight: bold;
-        }
-
+        // min-height: 250px;
+        
         a {
+            box-shadow: 2px 2px 7px -5px;
+            margin: 15px;
             text-decoration: none;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
+            border-radius: 5px;
+            background: #F8F8F8; 
             color: #424C55;
-            padding: 10px 0;
+            padding: 25px;
             transition: all .3s;
             font-size: 20px;
             font-weight: bold;
+            display: block;
+            transition: all .3s;
+
+            img {
+                max-width: 90%;
+            }
+    
+            h4 {
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 22px;
+                color: #424C55;
+                font-weight: bold;
+            }
 
             &:hover {
-                background: #354473;
-                color: #fff;
+                background: #EAEAEA;
+                transform: scale(1.1);
             }
         }
-    }
-}
-
-.portfolio-item:nth-child(1n + 4),
-.portfolio-item:nth-child(2) {
-    a {
-        background: #f2dd9a;
-    }
-}
-
-.portfolio-item:nth-child(2n + 4),
-.portfolio-item:nth-child(3) {
-    a {
-        background: #E77465;
-        color: #fff !important;
-    }
-}
-
-.portfolio-item:nth-child(3n + 4),
-.portfolio-item:nth-child(1) {
-    a {
-        background: #6441A4;
-        color: #fff !important;
-    }
-}
-
-.portfolio-item:nth-child(4n + 4) {
-    a {
-        background: #E99369;
-        color: #fff !important;
     }
 }

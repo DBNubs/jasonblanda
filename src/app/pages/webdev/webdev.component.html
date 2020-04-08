@@ -10,3 +10,19 @@
         <div id="left-bottom-brace"></div>
     </div>
 </div>
+
+<div class="content">
+    <div *ngFor="let blog of blogs" class="blog-item">
+        <img src={{blog.image}} alt={{blog.title}}>
+
+        <div class="contents">
+            <h4 class="title">{{blog.title}}</h4>
+            <p class="author">{{blog.author}}</p>
+            <div class="body">{{blog.body}}</div>
+
+            <div class="rm-container">
+                <a href="" class="read-more">Read More</a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -17,4 +17,13 @@ export class ApiService {
   public getPortfolioFeatured() {
     return this.httpClient.get(`http://api.jasonblanda.com/portfolio-featured?key_auth=${this.API_KEY}`);
   }
+
+  public getBlogs() {
+    return this.httpClient.get(`http://api.jasonblanda.com/web-development?key_auth=${this.API_KEY}`);
+  }
+
+  public getNewestBlog() {
+    return this.httpClient.get(`http://api.jasonblanda.com/web-development/newest?key_auth=${this.API_KEY}`);
+  }
+
 }

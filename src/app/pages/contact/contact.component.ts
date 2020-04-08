@@ -11,7 +11,11 @@ export class ContactComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    
+    document.getElementById('body').classList.add('contact');
+  }
+
+  ngOnDestroy(): void {
+    document.getElementById('body').classList.remove('contact');
   }
 
   onSubmit(form: NgForm) {

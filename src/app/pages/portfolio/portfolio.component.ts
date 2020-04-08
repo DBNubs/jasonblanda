@@ -24,15 +24,12 @@ export class PortfolioComponent implements OnInit {
    }
    
 
-  ngOnInit(): void {
+   ngOnInit(): void {
+    document.getElementById('body').classList.add('portfolio');
   }
 
-  hasAnImage() {
-    if(this.portfolio.image != null) {
-      this.hasImage = true;
-    } else {
-      this.hasImage = false;
-    }
+  ngOnDestroy(): void {
+    document.getElementById('body').classList.remove('portfolio');
   }
 
 }

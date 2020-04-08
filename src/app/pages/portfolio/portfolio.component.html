@@ -25,9 +25,10 @@
     <div class="content">
         <ngx-masonry [options]="{ transitionDuration: '0.8s' }">
             <div ngxMasonryItem class="masonry-item" *ngFor="let port of portfolio" class="portfolio-item">
-                <img src={{port.image}} alt={{port.title}}>
-                <h4>{{port.title}}</h4>
-                <a href="{{port.field_url}}" target="_blank">Visit Website</a>
+                <a href="{{port.field_url}}" target="_blank">
+                    <img *ngIf="port.image != ''" src={{port.image}} alt={{port.title}}>
+                    <h4>{{port.title}}</h4>
+                </a>
             </div>
         </ngx-masonry>
     </div>

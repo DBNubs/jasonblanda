@@ -10,6 +10,11 @@ export class PageNotFoundComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    document.getElementById('body').classList.add('not-found');
+  }
+
+  ngOnDestroy(): void {
+    document.getElementById('body').classList.remove('not-found');
   }
 
 }

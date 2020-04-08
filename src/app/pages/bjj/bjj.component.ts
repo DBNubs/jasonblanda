@@ -10,6 +10,11 @@ export class BjjComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    document.getElementById('body').classList.add('bjj');
+  }
+
+  ngOnDestroy(): void {
+    document.getElementById('body').classList.remove('bjj');
   }
 
 }
