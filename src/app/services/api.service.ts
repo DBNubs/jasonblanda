@@ -26,4 +26,8 @@ export class ApiService {
     return this.httpClient.get(`http://api.jasonblanda.com/web-development/newest?key_auth=${this.API_KEY}`);
   }
 
+  public getSingleNode(id: string) {
+    return this.httpClient.get(`http://api.jasonblanda.com/json-node/${id}?key_auth=${this.API_KEY}`);
+  }
+
 }

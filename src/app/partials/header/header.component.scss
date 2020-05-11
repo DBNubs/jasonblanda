@@ -1,7 +1,6 @@
 header {
     display: flex;
     align-items: center;
-    position: fixed;
     top: 0;
     left: 0;
     width: 98%;
@@ -9,14 +8,14 @@ header {
     z-index: 100;
 
     #left-top-brace {
-        background: #424C55;
+        // background: #424C55;
         height: 75px;
         position: relative;
         width: 5px;
         z-index: 100;
 
         &::after {
-            background: #424C55;
+            // background: #424C55;
             content: "";
             height: 5px;
             left: 0px;
@@ -27,14 +26,14 @@ header {
     }
 
     #right-top-brace {
-        background: #424C55;
+        // background: #424C55;
         height: 75px;
         position: relative;
         width: 5px;
         z-index: 100;
 
         &::after {
-            background: #424C55;
+            // background: #424C55;
             content: "";
             height: 5px;
             left: -75px;

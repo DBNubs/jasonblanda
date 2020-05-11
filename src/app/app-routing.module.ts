@@ -7,6 +7,7 @@ import { TwitchComponent } from './pages/twitch/twitch.component';
 import { BjjComponent } from './pages/bjj/bjj.component';
 import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { ArticleComponent } from './pages/article/article.component';
 
 const routes: Routes = [
   { path: '', component: HomepageComponent},
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'bjj', component: BjjComponent},
   { path: 'portfolio', component: PortfolioComponent},
   { path: 'contact', component: ContactComponent},
+  { path: ':section/:title', component: ArticleComponent},
   { path: '', redirectTo: '/', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent }
 ];

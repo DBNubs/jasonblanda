@@ -8,8 +8,7 @@ import { HostListener} from "@angular/core";
 })
 export class HomepageComponent implements OnInit {
   @HostListener("window:scroll", [])
-  onWindowScroll() {
-    console.log(document.getElementById('container').scrollTop + " | " + document.getElementById('twitch').offsetTop);
+  onWindowScroll(event) {
     if(document.getElementById('container').scrollTop >= document.getElementById('twitch').offsetTop) {
       document.getElementById('body').classList.add('white');
     } else {
@@ -22,6 +21,10 @@ export class HomepageComponent implements OnInit {
   }
 
   ngOnInit(): void { 
+  }
+
+  ngOnDestroy() {
+    document.getElementById('body').classList.remove('white');
   }
 
 }

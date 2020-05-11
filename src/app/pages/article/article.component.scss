@@ -1,0 +1,32 @@
+.page-header {
+    background: radial-gradient(50% 50% at 50% 50%, rgba(231, 116, 101, 0.68) 0%, rgba(231, 116, 101, 0.8) 100%);
+
+    .info {
+        text-align: center;
+        position: relative;
+        top: 40px;
+
+        .page-title {
+            color: #424C55;
+        }
+
+        .author-info {
+            color: #424C55;
+        }
+    }
+
+    #right-bottom-brace,
+    #left-bottom-brace {
+        background: #424C55;
+
+        &::after {
+            background: #424C55;
+        }
+    }
+}
+
+.content {
+    max-width: 95%;
+    margin: 45px auto;
+
+}

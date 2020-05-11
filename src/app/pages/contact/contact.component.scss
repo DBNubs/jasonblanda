@@ -1,5 +1,9 @@
 .page-header {
-    background: radial-gradient(50% 50% at 50% 50%, rgba(242, 221, 154, 0.68) 0%, #f2dd9a 100%);
+    // background: radial-gradient(50% 50% at 50% 50%, rgba(242, 221, 154, 0.68) 0%, #f2dd9a 100%);
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/assets/images/contact.jpeg');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
 
     .info {
         text-align: center;
@@ -7,11 +11,11 @@
         top: 40px;
 
         .page-title {
-            color: #424C55;
+            color: #fff;
         }
 
         .author-info {
-            color: #424C55;
+            color: #fff;
         }
     }
 
@@ -28,10 +32,28 @@
 .content {
     max-width: 75%;
     margin: 45px auto 0;
+    background: #F8F8F8;
+    padding: 25px;
+    box-shadow: 2px 2px 10px -4px #000;
+
     input,textarea {
         padding: 8px;
         font-size: 18px;
         width: 100%;
         margin-bottom: 15px;
+    }
+
+    p {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    a {
+        color: #6441A4;
+        text-decoration: none;
+
+        &:hover {
+            color: #424C55;
+        }
     }
 }

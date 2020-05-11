@@ -21,7 +21,7 @@
             <div class="body">{{blog.body}}</div>
 
             <div class="rm-container">
-                <a href="" class="read-more">Read More</a>
+                <button (click)="goToArticle( blog.title, blog.id )" class="read-more">Read More</button>
             </div>
         </div>
     </div>

@@ -11,6 +11,16 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
 }
 
+.front {
+    header {
+        position: fixed;
+    }
+}
+
+header {
+    position: absolute;
+}
+
 .page-header {
     height: 330px;
     display: flex;
@@ -70,7 +80,11 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-.white header {
+.white header,
+.front header,
+.twitch header,
+.portfolio header,
+.contact header {
     #right-top-brace,
     #left-top-brace {
         background: #fff !important;
@@ -97,7 +111,11 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-.white .footer {
+.white .footer,
+.front .footer,
+.twitch .footer,
+.portfolio .footer,
+.contact .footer { 
     #left-bottom-brace,
     #right-bottom-brace {
         background: #fff !important;
@@ -110,29 +128,31 @@ h1, h2, h3, h4, h5, h6 {
 
 .bjj,
 .twitch {
-    #right-top-brace,
-    #left-top-brace {
-        background: #fff !important;
-
-        &::after {
+    header {
+        #right-top-brace,
+        #left-top-brace {
             background: #fff !important;
-        }
-    }
 
-    #logo {
-        a {
-            color: #fff !important;
-
-            &:hover {
-                color: #CFDBDC !important;
+            &::after {
+                background: #fff !important;
             }
         }
-    }
 
-    .hamburger-inner,
-    .hamburger-inner::before,
-    .hamburger-inner::after {
-        background-color: #fff !important;
+        #logo {
+            a {
+                color: #fff !important;
+
+                &:hover {
+                    color: #CFDBDC !important;
+                }
+            }
+        }
+
+        .hamburger-inner,
+        .hamburger-inner::before,
+        .hamburger-inner::after {
+            background-color: #fff !important;
+        }
     }
 }
 

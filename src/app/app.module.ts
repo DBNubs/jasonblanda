@@ -19,6 +19,7 @@ import { TwitchComponent } from './pages/twitch/twitch.component';
 import { BjjComponent } from './pages/bjj/bjj.component';
 import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { ArticleComponent } from './pages/article/article.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { ContactComponent } from './pages/contact/contact.component';
     TwitchComponent,
     BjjComponent,
     PortfolioComponent,
-    ContactComponent
+    ContactComponent,
+    ArticleComponent
   ],
   imports: [
     BrowserModule,

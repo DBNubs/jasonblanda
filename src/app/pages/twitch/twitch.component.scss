@@ -1,5 +1,9 @@
 .page-header {
-    background: radial-gradient(50% 50% at 50% 50%, rgba(100, 65, 164, 0.68) 0%, #6441a4 100%);
+    // background: radial-gradient(50% 50% at 50% 50%, rgba(100, 65, 164, 0.68) 0%, #6441a4 100%);
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/assets/images/twitch.jpeg');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
 
     .info {
         text-align: center;
@@ -7,11 +11,11 @@
         top: 40px;
 
         .page-title {
-            color: #CFDBDC;
+            color: #fff;
         }
 
         .author-info {
-            color: #CFDBDC;
+            color: #fff;
         }
     }
 
