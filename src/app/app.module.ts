@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { PathLocationStrategy, LocationStrategy } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -45,7 +46,7 @@ import { ArticleComponent } from './pages/article/article.component';
     FormsModule,
     NgxMasonryModule
   ],
-  providers: [],
+  providers: [{provide: LocationStrategy, useClass: PathLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
